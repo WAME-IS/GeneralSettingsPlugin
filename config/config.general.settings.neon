@@ -1,0 +1,11 @@
+services:
+	GeneralSettings:
+		class: Wame\GeneralSettingsPlugin\Models\General
+		setup:
+			- addFormContainer(Wame\GeneralSettingsPlugin\Forms\SiteTitleFormContainer(), 'SiteTitleFormContainer')
+
+
+	SettingsManager:
+		setup:
+			- addType(@GeneralSettings, 'General')
+
