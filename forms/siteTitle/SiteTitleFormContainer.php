@@ -18,14 +18,14 @@ class SiteTitleFormContainer extends BaseSettingsFormContainer
 	{
 		return 'siteTitle';
 	}
-	
-	
+
+
 	public function getValue($form)
 	{
 		return $form->getHttpData($form::DATA_TEXT, $this->getInputName());
 	}
 
-	
+
     protected function configure() 
 	{
 		$form = $this->getForm();

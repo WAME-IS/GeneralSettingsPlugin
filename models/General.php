@@ -19,8 +19,8 @@ class General extends SettingsType
 		
 		$this->settingsForm = $settingsForm;
 	}
-	
-	
+
+
 	protected function createComponentSettingsForm()
 	{
 		$form = $this->settingsForm
@@ -29,20 +29,19 @@ class General extends SettingsType
 		
 		return $form;
 	}
-	
-	
+
+
 	public function getComponentServices()
 	{
 		$this->addService($this->createComponentSettingsForm(), 'settingsForm');
 		
 		return $this;
 	}
-	
-	
+
+
 	public function getTitle()
 	{
 		return _('General');
 	}
 
-	
 }
