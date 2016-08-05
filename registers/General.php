@@ -1,12 +1,12 @@
 <?php 
 
-namespace Wame\GeneralSettingsPlugin\Models;
+namespace Wame\GeneralSettingsPlugin\Registers;
 
-use Wame\SettingsModule\Models\SettingsType;
+use Wame\SettingsModule\Registers\Types\SettingsGroup;
 use Wame\SettingsModule\Forms\SettingsForm;
 
 
-class General extends SettingsType
+class General extends SettingsGroup
 {
 	/** @var SettingsForm */
 	private $settingsForm;
