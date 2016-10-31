@@ -3,6 +3,9 @@ services:
 		class: Wame\GeneralSettingsPlugin\Registers\General
 		setup:
 			- addFormContainer(Wame\GeneralSettingsPlugin\Forms\SiteTitleFormContainer(), 'SiteTitleFormContainer')
+			- addFormContainer(Wame\GeneralSettingsPlugin\Forms\TitleFormContainer(), 'TitleFormContainer')
+			- addFormContainer(Wame\GeneralSettingsPlugin\Forms\KeywordsFormContainer(), 'KeywordsFormContainer')
+			- addFormContainer(Wame\GeneralSettingsPlugin\Forms\DescriptionFormContainer(), 'DescriptionFormContainer')
 
 
 	SettingsGroupRegister:
