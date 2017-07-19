@@ -1,0 +1,5 @@
+services:
+	AdminMenu:
+		setup:
+			- setService(Wame\GeneralSettingsPlugin\Vendor\Wame\MenuModule\Components\MenuControl\AdminMenu\AdminMenuItem())
+
